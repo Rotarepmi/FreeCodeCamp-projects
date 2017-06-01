@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>#FreeCodeCamp Pomodoro Clock</title>
+  <link href="https://fonts.googleapis.com/css?family=Revalia&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+		<div class="content">
+			<span class="label">break length</span>
+			<button id="subtract-break">&lt;</button>
+			<span id="break">5</span>
+			<button id="add-break">&gt;</button>
+		</div>
+
+		<div class="content">
+			<span class="label">session length</span>
+			<button id="subtract-session">&lt;</button>
+			<span id="session">25</span>
+			<button id="add-session">&gt;</button>
+		</div>
+	</div>
+
+	<section class="clock">
+		<span id="activity" class="label">Pomodoro</span>
+		<span id="time" class="label">25:00</span> 
+		<button id="start">start</button>
+		<button id="stop">stop</button>
+	</section>
+
+	<div class="tomato">
+		<div class="tomato-copy">
+			<div class="tomato-background"></div>
+		</div>
+	</div>
+  
+  <script src="js/main.js"></script>
+
+</body>
+</html>

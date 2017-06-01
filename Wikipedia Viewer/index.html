@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>#FreeCodeCamp Wikipedia Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+  
+  <p class="text-center r-article"><a href="https://pl.wikipedia.org/wiki/Special:Random" target="_blank">Kliknij tu, aby wylosować artykuł</a></p>
+  
+  <div class="input-group col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5 center-block">
+    <button type="button" class="icon-search"><i class="glyphicon glyphicon-search"></i></button><input id="searchtype" type="text" class="form">
+    <p class="text-center butt-desc">Kliknij aby wyszukać frazę</p>
+  </div>
+  
+
+  <div class="container">
+    <div class="list-group" id="articles">
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

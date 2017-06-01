@@ -1,0 +1,11 @@
+{
+	"name": "WeatherApp",
+	"version": "1.0.1",
+	"description": "Shows local weather",
+	"dependencies": {
+		"mime": "~1.2.7"
+	},
+	"engines": {
+		"node": "6.10.0"
+	}
+}

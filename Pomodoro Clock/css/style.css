@@ -1,0 +1,86 @@
+body {
+  background: #0f1526;
+  font-family: "Revalia", cursive;
+  color: #ddd9cc;
+  font-size: 20px;
+}
+
+button {
+  background: transparent;
+  height: 20px;
+  font-size: 20px;
+  line-height: 10px;
+  border: none;
+  outline: none;
+  color: #ddd9cc;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  color: #777774;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+.container button {
+  width: 20px;
+}
+.container .content {
+  min-width: 97px;
+  padding: 10px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  margin: auto;
+}
+
+.clock {
+  text-align: center;
+}
+
+.tomato {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  margin: 70px auto;
+  border-radius: 50%;
+  border: solid 5px #9b0000;
+}
+.tomato::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 35%;
+  clip-path: polygon(24% 13%, 58% 44%, 96% 44%, 58% 56%, 97% 100%, 51% 64%, 12% 99%, 41% 57%, 0 59%, 43% 47%);
+  background: #275600;
+  left: 25%;
+  top: -21%;
+  z-index: 2;
+}
+
+.tomato-copy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+.tomato-copy .tomato-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+}

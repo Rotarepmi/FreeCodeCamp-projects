@@ -1,0 +1,15 @@
+body{
+  background: silver;
+}
+
+.jumbotron{
+  width: 70vw;
+  margin: 20vh auto 20vh auto;
+  padding-bottom: 50px;
+  background: white;
+}
+
+.btn:focus{
+  outline: none !important;
+  background-color: #1b95e0 !important;
+}

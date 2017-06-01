@@ -1,0 +1,21 @@
+body{
+  margin-top: 20px;
+  font-family: Lato;
+}
+
+p{
+  font-size: 20px !important;
+}
+
+ul{
+  font-size: 17px;
+}
+
+.text-container{
+  margin: 50px;
+}
+
+.footer{
+  border-top: dotted 1px silver;
+  padding-top: 10px;
+}

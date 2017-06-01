@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>#FreeCodeCamp Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="calculator" ng-app="calculator" ng-controller="buttonController">
+		<input readonly class="screen" ng-model="screen">
+		<span class="memmory"> {{ memmory }} </span>
+
+		<div class="keyboard">
+			<button class="btn btnClear" ng-click="clearScreen()">C</button>
+			<button class="btn" ng-click="changeSign()">&#177;</button>
+			<button class="btn" ng-click="multiply()">&#215;</button> 
+
+			<button class="btn" ng-click="addToScreen(7)">7</button>
+			<button class="btn" ng-click="addToScreen(8)">8</button>
+			<button class="btn" ng-click="addToScreen(9)">9</button>
+			<button class="btn" ng-click="divide()">&#247;</button>
+
+			<button class="btn" ng-click="addToScreen(4)">4</button>
+			<button class="btn" ng-click="addToScreen(5)">5</button>
+			<button class="btn" ng-click="addToScreen(6)">6</button>
+			<button class="btn" ng-click="subtract()">&#45;</button> 
+
+			<button class="btn" ng-click="addToScreen(1)">1</button>
+			<button class="btn" ng-click="addToScreen(2)">2</button>
+			<button class="btn" ng-click="addToScreen(3)">3</button> 
+			<button class="btn" ng-click="add()">&#43;</button> 
+
+			<button class="btn" ng-click="addToScreen(0)">0</button>
+			<button class="btn" ng-click="addDot()">&#46;</button>
+			<button class="btn btnEquals" ng-click="calculate()">&#61;</button>
+		</div>
+
+		<footer>Coded By Jakub Mandra</footer>
+	</div>
+	
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

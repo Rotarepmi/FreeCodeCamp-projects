@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+ font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+
+background: #093028; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #093028 , #237A57); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #093028 , #237A57); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+.input-group{
+  text-align: center;
+  height: 30px;
+}
+
+.form{
+  background: none;
+  color: white;
+  font-weight: bold;
+  padding-left: 5px;
+  height: 100%;
+  width:  0%;
+  border-left: none;
+  opacity: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-transition: width 1s, border 1s, opacity 1s;
+  transition: width 1s, border 1s, opacity 1s; 
+}
+
+.form:focus{
+  outline: none;
+}
+
+.form.toggleForm{
+  opacity: 1;
+  width: 80%;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.icon-search{
+  background-color: #eee;
+  width: 50px;
+  height: 50px;
+  font-size: 2.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  -webkit-transition: border-radius 1s, width 1s, height 1s, font-size 1s;
+  transition: border-radius 1s, width 1s, height 1s, font-size 1s;
+}
+
+.icon-search:focus{
+  outline: none;
+}
+
+.icon-search.toggleSearch{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 20%;
+  height: 100%;
+  font-size: 1.24rem;
+}
+
+.butt-desc{
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  -webkit-transition: opacity 0.2s 1.5s;
+  transition: opacity 0.2s 1.5s;
+  opacity: 1;
+}
+
+.butt-desc.toggleDesc{
+  opacity: 0;
+}
+
+.r-article a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.r-article{
+  margin-top: 35vh;
+  -webkit-transition: margin 1s;
+  transition: margin 1s;
+}
+
+.r-article.toggleArticle{
+  margin-top: 2rem;
+}
+
+.container{
+  margin-top: 400px;
+  -webkit-transition: margin-top 1s;
+  transition: margin-top 1s;
+  display: none;
+}
+
+.list-group-item{
+  margin-top: 1rem;
+}
+
+.list-group-item:hover{
+  border-left: 7px solid #55555e;
+}

@@ -1,0 +1,20 @@
+#map{
+	height: 50vh;
+	border: 8px solid rgba(31, 31, 122, 0.2);
+	border-radius: 20px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+	background-image: url(http://www117.zippyshare.com/scaled/JC2g56UE/file.html);
+}
+
+.container{
+	margin-top: 10%;
+}
+
+h3{
+	display: none;
+}
